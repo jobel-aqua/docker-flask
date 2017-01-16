@@ -1,3 +1,18 @@
+
+Runs `nginx` and `uwsgi` under `supervisor`.
+
+```
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  4 04:22 ?        00:00:00 /usr/bin/python /usr/bin/supervisord --nodaemon
+root         9     1  0 04:22 ?        00:00:00 nginx: master process /usr/sbin/nginx
+root        10     1  4 04:22 ?        00:00:00 /usr/local/bin/uwsgi --ini /var/www/app/uwsgi.ini
+www-data    11     9  0 04:22 ?        00:00:00 nginx: worker process
+www-data    12     9  0 04:22 ?        00:00:00 nginx: worker process
+www-data    13     9  0 04:22 ?        00:00:00 nginx: worker process
+www-data    14     9  0 04:22 ?        00:00:00 nginx: worker process
+
+```
+
 [![Build Status](https://travis-ci.org/p0bailey/docker-flask.svg?branch=master)](https://travis-ci.org/p0bailey/docker-flask)
 
 
