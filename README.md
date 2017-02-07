@@ -12,7 +12,7 @@ www-data    13     9    nginx: worker process
 www-data    14     9    nginx: worker process
 ```
 
-[![Build Status](https://travis-ci.org/p0bailey/docker-flask.svg?branch=master)](https://travis-ci.org/p0bailey/docker-flask)
+[![Build Status](https://travis-ci.org/jobel-aqua/docker-flask.svg?branch=master)](https://travis-ci.org/jobel-aqua/docker-flask)
 
 
 This image is a boilerplate for any Flask application,  pages are served by uwsgi and Nginx.
